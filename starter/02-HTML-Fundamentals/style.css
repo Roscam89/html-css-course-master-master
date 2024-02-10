@@ -1,0 +1,158 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  color: #444;
+  /* position: relative; */
+}
+
+.container {
+  width: 1600px;
+  margin: 0 auto;
+}
+.top-header {
+  background-color: #cac5c5;
+  margin: 15px 15px;
+  padding: 20px 20px;
+}
+
+.bottom-header {
+  padding: 20px 20px;
+  margin: 20px 20px;
+}
+.code-magazine {
+  font-size: 20px;
+  font-style: italic;
+  margin-bottom: 20px;
+  margin-left: 30px;
+}
+
+aside {
+  margin-top: 100px;
+  background-color: #cac5c5;
+  border: 5px solid #1098ad;
+  border-left: none;
+  border-right: none;
+  padding: 50px 40px;
+}
+
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+
+.basic-language {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.what-is {
+  font-size: 22px;
+  padding: 20px;
+}
+.why-learn {
+  margin-bottom: 20px;
+}
+#author {
+  font-style: italic;
+  font-size: 14px;
+  margin: 10px;
+}
+#copy {
+  font-size: 20px;
+  text-align: end;
+  margin: 10px 10px;
+}
+#related-posts {
+  font-size: 17px;
+  text-align: center;
+  margin-top: 20px;
+}
+.related-author {
+  font-size: 12px;
+  font-weight: bold;
+}
+.related-posts-list {
+  list-style: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: larger;
+  position: relative;
+}
+article {
+  padding: 25px;
+  margin: 25px;
+}
+
+/* .bottom-header :nth-child(3) {
+  color: red;
+} */
+
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+a:visited {
+  color: #1098ad;
+}
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline;
+}
+a:active {
+  background-color: black;
+  font-style: italic;
+}
+
+ul,
+ol {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  padding-top: 15px;
+}
+ul,
+ol:last-child {
+  margin-bottom: 0;
+}
+
+p {
+  margin-bottom: 10px;
+}
+.like-button {
+  width: 90px;
+  height: 40px;
+  position: absolute;
+  top: 1200px;
+}
+/* a {
+  margin-bottom: 30px;
+  padding-left: 10px;
+} */
+
+article {
+  width: 1000px;
+  float: left;
+}
+aside {
+  width: 350px;
+  float: right;
+}
+footer {
+  clear: both;
+  float: left;
+}
+nav {
+  float: right;
+  font-size: larger;
+}
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: block;
+}

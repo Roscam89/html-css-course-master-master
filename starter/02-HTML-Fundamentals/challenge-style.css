@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.4;
+}
+
+.container {
+  border: 5px solid black;
+  width: 825px;
+  margin: 5% auto;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  background-color: rgb(223, 222, 222);
+  margin: 0 0;
+  padding: 5px 5px;
+  position: relative;
+}
+
+h1::after {
+  display: inline-block;
+  content: "SALE";
+  background-color: red;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 3px;
+  position: absolute;
+  top: -15px;
+  left: -35px;
+  padding: 8px 24px;
+}
+
+p {
+  font-weight: bolder;
+}
+
+.price {
+  font-size: 32px;
+
+  float: left;
+}
+
+.ready {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.shipping {
+  text-transform: uppercase;
+  font-size: smaller;
+  color: grey;
+  padding-left: 135px;
+  padding-top: 17px;
+}
+a:link,
+a:visited {
+  color: black;
+}
+
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+ul {
+  font-weight: bold;
+  list-style: square;
+  padding-left: 20px;
+  margin-bottom: 0;
+  margin-top: 0;
+  float: right;
+  padding-top: 10%;
+}
+
+.add-cart-button {
+  text-transform: uppercase;
+  background-color: black;
+  color: white;
+  border: none;
+  font-size: larger;
+  width: 100%;
+  padding: 5px;
+  border-top: 5px solid black;
+}
+button:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+.product-details {
+  text-transform: uppercase;
+  padding-top: 30px;
+}
+.more-info {
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+.color {
+  width: 25px;
+  height: 25px;
+  background-color: black;
+  display: inline-block;
+  margin-right: 10px;
+  padding-top: 10%;
+}
+
+.color-blue {
+  background-color: blue;
+}
+
+.color-red {
+  background-color: red;
+}
+
+.color-yellow {
+  background-color: yellow;
+}
+
+.color-green {
+  background-color: green;
+}
+
+.color-brown {
+  background-color: brown;
+}
+
+.img {
+  float: left;
+  width: 250px;
+  height: 250px;
+}
+
+.right {
+  float: right;
+  width: 270px;
+}
+.left {
+  float: left;
+  width: 290px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.box-container {
+  padding-top: 20px;
+}
+
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: block;
+}
