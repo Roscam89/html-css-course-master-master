@@ -71,11 +71,6 @@ a:active {
 ul {
   font-weight: bold;
   list-style: square;
-  padding-left: 20px;
-  /* margin-bottom: 0;
-  margin-top: 0; */
-  float: right;
-  padding-top: 10%;
 }
 
 .add-cart-button {
@@ -87,8 +82,9 @@ ul {
   width: 100%;
   height: 40px;
   /* padding: 5px; */
-   border-top: 5px solid black; */
+  border-top: 5px solid black;
 }
+
 button:hover {
   background-color: white;
   color: black;
@@ -96,7 +92,7 @@ button:hover {
 }
 .product-details {
   text-transform: uppercase;
-  padding-top: 30px;
+  margin-bottom: 25px;
 }
 .more-info {
   padding-bottom: 10px;
@@ -130,26 +126,14 @@ button:hover {
 }
 
 .img {
-  /* float: left; */
   width: 250px;
   height: 250px;
 }
 
-/* .right {
-  float: right;
-  width: 270px;
-}
-.left {
-  float: left;
-  width: 290px;
-  padding-left: 20px;
-  padding-top: 20px;
-} */
-
 .box-container {
   display: flex;
   margin-top: 20px;
-  justify-content: space-between;
+  gap: 10px;
   width: 250px;
 }
 
@@ -161,17 +145,14 @@ button:hover {
 
 .content-container {
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
 }
 
 .right {
-  width: 33%;
-  margin-left: 30px;
-  margin-right: 30px;
+  flex: 1;
 }
 
 .left {
-  width: 33%;
-  margin-top: 20px;
-  margin-left: 30px;
+  flex: 1;
 }
