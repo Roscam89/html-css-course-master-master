@@ -7,7 +7,6 @@
 body {
   font-family: sans-serif;
   color: #444;
-  /* position: relative; */
 }
 
 .container {
@@ -19,13 +18,9 @@ body {
   height: 100px;
   font-size: larger;
   font-weight: bolder;
-  /* margin: 15px 15px;
-  padding: 20px 20px; */
 }
 
 .bottom-header {
-  /* padding: 20px 20px;
-  margin: 20px 20px; */
 }
 .code-magazine {
   font-size: 30px;
@@ -86,10 +81,6 @@ article {
   padding: 25px;
   margin: 25px;
 }
-
-/* .bottom-header :nth-child(3) {
-  color: red;
-} */
 
 a:link {
   color: #1098ad;
