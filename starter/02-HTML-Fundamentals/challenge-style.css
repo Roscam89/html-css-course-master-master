@@ -11,7 +11,7 @@ body {
 
 .container {
   border: 5px solid black;
-  width: 825px;
+  width: 800px;
   margin: 5% auto;
 }
 
@@ -72,8 +72,8 @@ ul {
   font-weight: bold;
   list-style: square;
   padding-left: 20px;
-  margin-bottom: 0;
-  margin-top: 0;
+  /* margin-bottom: 0;
+  margin-top: 0; */
   float: right;
   padding-top: 10%;
 }
@@ -85,8 +85,9 @@ ul {
   border: none;
   font-size: larger;
   width: 100%;
-  padding: 5px;
-  border-top: 5px solid black;
+  height: 40px;
+  /* padding: 5px; */
+   border-top: 5px solid black; */
 }
 button:hover {
   background-color: white;
@@ -106,9 +107,6 @@ button:hover {
   width: 25px;
   height: 25px;
   background-color: black;
-  display: inline-block;
-  margin-right: 10px;
-  padding-top: 10%;
 }
 
 .color-blue {
@@ -132,12 +130,12 @@ button:hover {
 }
 
 .img {
-  float: left;
+  /* float: left; */
   width: 250px;
   height: 250px;
 }
 
-.right {
+/* .right {
   float: right;
   width: 270px;
 }
@@ -146,14 +144,34 @@ button:hover {
   width: 290px;
   padding-left: 20px;
   padding-top: 20px;
-}
+} */
 
 .box-container {
-  padding-top: 20px;
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+  width: 250px;
 }
 
-.clearfix::after {
+/* .clearfix::after {
   clear: both;
   content: "";
   display: block;
+} */
+
+.content-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.right {
+  width: 33%;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.left {
+  width: 33%;
+  margin-top: 20px;
+  margin-left: 30px;
 }

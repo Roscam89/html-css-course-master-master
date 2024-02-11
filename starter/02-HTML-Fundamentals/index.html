@@ -17,18 +17,25 @@
     <a href="../04-CSS-Layouts/flexbox.html">Flexbox</a>
     <a href="../04-CSS-Layouts/css-grid.html">CSS Grid</a>
   </nav>
+
    </header>
+
+   <div class="row">
 
    <article>
 
-    <header class="bottom-header">
-    <h2 class="basic-language">The Basic Language of the Web: HTML</h2>
-    <img class="laura-img" src="/starter/02-HTML-Fundamentals/images/laura-jones.jpg" alt="Laura Jones picture" height="90" width="90"/>
-    <p id="author">Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
     
-    <img class="fundament-img" src="/starter/02-HTML-Fundamentals/images/post-img.jpg" height="200" width="500"/>
-  </header>
+    <header class="bottom-header">
+     <h2 class="basic-language">The Basic Language of the Web: HTML</h2>
+     <div class="author-box">
 
+       <img class="laura-img" src="/starter/02-HTML-Fundamentals/images/laura-jones.jpg" alt="Laura Jones picture" height="90" width="90"/>
+       <p id="author">Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
+      </div>
+
+      <img class="fundament-img" src="/starter/02-HTML-Fundamentals/images/post-img.jpg" height="200" width="500"/>
+    </header>
+    
     <p >
       All modern websites and web applications are built using three fundamental
       technologies: HTML, CSS and JavaScript. These are the languages of the
@@ -50,9 +57,9 @@
       paragraphs, links, headings, images, video, etc. Web browsers understand
       HTML and render HTML code as websites.
     </p>
-
+    
     <p>In HTML, each element is made up of 3 parts:</p>
-
+    
     <p>
       <ol>
         <li>The opening tag</li>
@@ -60,8 +67,8 @@
         <li>The actual element</li>
       </ol>
       
-    
-     
+      
+      
     </p>
     <p>You can learn more at the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"> MDN Web Docs</a>. </p>
     <h4 class="why-learn">Why should you learn HTML?</h4>
@@ -69,35 +76,58 @@
       There are countless reasons for learning the fundamental language of the
       web. Here are 5 of them:
     </p>
-
+    
     <ul>
-    <li>To be able to use the fundamental web dev language</li>
-    <li>
-      To hand-craft beautiful websites instead of relying on tools like Wordpress
-      or Wix
-    </li>
-    <li>To build web applications</li>
-    <li>To impress friends</li>
-    <li>To have fun 😃</li>
-</ul>
+      <li>To be able to use the fundamental web dev language</li>
+      <li>
+        To hand-craft beautiful websites instead of relying on tools like Wordpress
+        or Wix
+      </li>
+      <li>To build web applications</li>
+      <li>To impress friends</li>
+      <li>To have fun 😃</li>
+    </ul>
     <p>Hopefully you learned something new here. See you next time!</p>
-</article>
+  </article>
+  
+  <aside>
+    <h5 id="related-posts">RELATED POSTS</h5>
+    <ul class="related-posts-list">
+      <li class="related-list"><img src="/starter/02-HTML-Fundamentals/images/related-1.jpg" height="50px" width="50px"/>
+        <div>
+          
+          <a href="#">How To Learn Web Development</a>
+          <p class="related-author">By Jonas Schmedtman</p>
+          
+        </div>
+      </li>
+      
+      
+      <li class="related-list"><img src="/starter/02-HTML-Fundamentals/images/related-2.jpg" height="50px" width="50px"/>
+        <div>
+          <a href="#">The Unknown Powers of CSS</a>
+          <p class="related-author">By Jim Dilon</p>
+          
+        </div>
+      </li>
+      
+      <li class="related-list"><img src="/starter/02-HTML-Fundamentals/images/related-3.jpg" height="50px" width="50px"/>
+        <div>
+          
+          <a href="#">Why JavaScript is Awesome</a>
+          <p class="related-author">By Matilda </p>
+          
+        </div>
+      </li>
+    </ul>
+    
+  </aside>
 
-<aside>
-  <h5 id="related-posts">RELATED POSTS</h5>
-  <ul class="related-posts-list">
-    <li><img src="/starter/02-HTML-Fundamentals/images/related-1.jpg" height="50px" width="50px"/>
-    <a href="#">How To Learn Web Development</a>
-  <p class="related-author">By Jonas Schmedtman</p></li>
-  <li><img src="/starter/02-HTML-Fundamentals/images/related-2.jpg" height="50px" width="50px"/>
-    <a href="#">The Unknown Powers of CSS</a>
-  <p class="related-author">By Jim Dilon</p></li>
-  <li><img src="/starter/02-HTML-Fundamentals/images/related-3.jpg" height="50px" width="50px"/>
-    <a href="#">Why JavaScript is Awesome</a>
-  <p class="related-author">By Matilda </p></li>
-  </ul>
-  <button class="like-button">❤ Like</button>
-</aside>
+
+ 
+
+</div>
+<button class="like-button">❤ Like</button>
 
 
 
