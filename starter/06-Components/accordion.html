@@ -38,8 +38,10 @@
 
       .accordion-container {
         width: 800px;
-
         margin: 100px auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
       }
 
       .icon {
@@ -54,46 +56,105 @@
       }
 
       .accordion-item {
-        border-top: 5px solid #087f5b;
+        /* border-top: 5px solid #087f5b; */
         display: grid;
         grid-template-columns: 48px 1fr 48px;
-        height: 80px;
         align-items: center;
-        color: #087f5b;
+        /* color: #087f5b; */
         font-weight: bold;
-        font-size: 24px;
+        box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
       }
 
       .text {
         justify-self: center;
       }
 
+      .text,
+      .number,
+      .icon {
+        font-size: 24px;
+        margin-top: 10px;
+      }
+
       .hidden-container {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        justify-items: center;
-        align-items: center;
         line-height: 24px;
+        grid-column: 2;
+
+        display: none;
+      }
+
+      .open {
+        border-top: 5px solid #087f5b;
+      }
+
+      .open .hidden-container {
+        display: block;
+      }
+
+      .open .number,
+      .open .text,
+      .open .icon {
+        color: #087f5b;
       }
       .text-h {
-        width: 65%;
         height: auto;
         font-weight: bold;
         color: #3d4042;
+        margin: 20px;
+        align-self: center;
       }
 
       ul {
-        width: 60%;
         height: auto;
-        justify-self: center;
-        font-weight: bolder;
+        margin: 20px;
+        font-weight: bold;
         color: #707274;
       }
     </style>
   </head>
   <body>
     <div class="accordion-container">
+      <div class="accordion-item open">
+        <p class="number">01</p>
+        <p class="text">Where are these chairs assembled?</p>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m19.5 8.25-7.5 7.5-7.5-7.5"
+          />
+        </svg>
+        <div class="hidden-container">
+          <p class="text-h">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto
+            temporibus commodi placeat porro sed obcaecati officia, ea nulla,
+            eaque dolorem omnis odit sequi quae ullam exercitationem explicabo
+            aut dolores incidunt.
+          </p>
+          <ul>
+            <li>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit ea nulla.
+            </li>
+            <li>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit ea
+              nullaea nulla.
+            </li>
+            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+            <li>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elitea nulla.
+            </li>
+          </ul>
+        </div>
+      </div>
+
       <div class="accordion-item">
         <p class="number">02</p>
         <p class="text">How long do I have to return my chair?</p>
@@ -112,28 +173,69 @@
             d="m19.5 8.25-7.5 7.5-7.5-7.5"
           />
         </svg>
+        <div class="hidden-container">
+          <p class="text-h">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto
+            temporibus commodi placeat porro sed obcaecati officia, ea nulla,
+            eaque dolorem omnis odit sequi quae ullam exercitationem explicabo
+            aut dolores incidunt.
+          </p>
+          <ul>
+            <li>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit ea nulla.
+            </li>
+            <li>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit ea
+              nullaea nulla.
+            </li>
+            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+            <li>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elitea nulla.
+            </li>
+          </ul>
+        </div>
       </div>
 
-      <div class="hidden-container">
-        <p class="text-h">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto
-          temporibus commodi placeat porro sed obcaecati officia, ea nulla,
-          eaque dolorem omnis odit sequi quae ullam exercitationem explicabo aut
-          dolores incidunt.
-        </p>
-        <ul>
-          <li>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit ea nulla.
-          </li>
-          <li>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit ea nullaea
-            nulla.
-          </li>
-          <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
-          <li>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elitea nulla.
-          </li>
-        </ul>
+      <div class="accordion-item">
+        <p class="number">03</p>
+        <p class="text">Do you ship outside the EU?</p>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m19.5 8.25-7.5 7.5-7.5-7.5"
+          />
+        </svg>
+
+        <div class="hidden-container">
+          <p class="text-h">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto
+            temporibus commodi placeat porro sed obcaecati officia, ea nulla,
+            eaque dolorem omnis odit sequi quae ullam exercitationem explicabo
+            aut dolores incidunt.
+          </p>
+          <ul>
+            <li>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit ea nulla.
+            </li>
+            <li>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit ea
+              nullaea nulla.
+            </li>
+            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+            <li>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elitea nulla.
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </body>
